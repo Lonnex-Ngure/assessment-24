@@ -1,0 +1,101 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.header {
+  border: 1px solid white;
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+h1 {
+  margin-left: 50px;
+}
+
+.main {
+  margin: 50px;
+}
+
+input,
+select {
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+}
+
+#region-filter {
+  float: right;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.country {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.country:hover {
+  transform: scale(1.05);
+}
+
+.country img {
+  width: 100%;
+  height: auto;
+  max-height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+#country-detail {
+  text-align: center;
+  margin: 20px;
+}
+
+#country-detail img {
+  width: 200px;
+  height: auto;
+  border-radius: 5px;
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+body.dark-mode .header {
+  background-color: #1e1e1e;
+}
+
+body.dark-mode .country {
+  border-color: #333;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+  background-color: #333;
+  color: #fff;
+  border-color: #555;
+}
+
